@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<title>JS and CSS Files</title>
     
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -32,123 +32,129 @@
 	<link href="css/dc.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 
+    
 </head>
 <body>
+
+
 
 <img src="http://www.donovanlo.sg/images/donovanlogo150x131.png" alt="by Donovan" class="float-left m-4">
 <h1> JS and CSS Files</h1>
 
 <div id="howto">
-	<p> How to use: View page source, copy everything and delete those not needed. The listing has taken dependencies
-		into consideration.</p>
-	<p><a href="https://github.com/DonovanLoSg/JS-and-CSS-for-Projects/tree/master/scripts"> [ JS ] </a>
-		<a href="https://github.com/DonovanLoSg/JS-and-CSS-for-Projects/tree/master/css"> [ CSS ] </a></p>
+    <button type="button" id="btn5" onclick="toggle('scriptName', 'block')">Show Script Name</button> 
+    <button type="button" id="btn6" onclick="toggle('scriptName', 'none')">Hide Hide Script Name</button> <br>
+	<button type="button" id="btn1" onclick="toggle('scriptDescription', 'none'); toggle('scriptDownload', 'none')">Show CDN urls only</button> 
+    <button type="button" id="btn2" onclick="toggle('scriptDescription', 'block'); toggle('scriptDownload', 'block')">Show full details of each</button> <br>
+    <button type="button" id="btn3" onclick="toggle('htmlCode', 'block')">Show HTML tags</button> 
+    <button type="button" id="btn4" onclick="toggle('htmlCode', 'none')">Hide HTML tags</button> <br>
 </div>
 
 <div class="container">
 <ul>
-	<li class="scriptName"><a href="https://fontawesome.com/v4.7.0/">Font Awesome 4.7.0</a>
+	<li>
+        <a class="scriptName" href="https://fontawesome.com/v4.7.0/">Font Awesome 4.7.0</a>
 		<ul>
 			<li class="scriptDescription">Get vector icons and social logos on your website with Font Awesome, the web's
 				most popular icon set and toolkit.</li>
-			<li class="scriptCDN">https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+			<li class="scriptCDN"><span class="htmlCode">&lt;link rel=&quot;stylesheet&quot; href=&quot;</span>https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css<span class="htmlCode">&quot;&gt;</span>
 			</li>
-			<li class="scriptDownload">Download : <a href="css/font-awesome.min.css">font-awesome.min.css</a>
+			<li class="scriptDownload">Download : <a href="css/font-awesome.min.css">font-awesome.min.css</a></li>
 		</ul>
 	</li>
     
-	<li class="scriptName"><a href="https://momentjs.com">Moment.js 2.24.0</a>
+	<li>
+        <a class="scriptName" href="https://momentjs.com">Moment.js 2.24.0</a>
 		<ul>
-			<li class="scriptDescription:">Parse, validate, manipulate, and display dates and times in JavaScript.</li>
-			<li class="scriptCDN">https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js</li>
+			<li class="scriptDescription">Parse, validate, manipulate, and display dates and times in JavaScript.</li>
+			<li class="scriptCDN"><span class="htmlCode">&lt;script src=&quot;</span>https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js<span class="htmlCode">&quot;&gt;&lt;/script&gt;</span></li>
 			<li class="scriptDownload">Download : <a href="js/moment.min.js">moment.min.js</a></li>
 		</ul>
 	</li>
     <script src="js/moment.min.js"></script>
 
     <li>
-        <a href="https://jquery.com">jQuery 3.4.1</a>
+        <a  class="scriptName" href="https://jquery.com">jQuery 3.4.1</a>
 		<ul>
 			<li class="scriptDescription">Document traversal and manipulation, event handling, animation.</li>
-			<li class="scriptCDN">https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js</li>
+			<li class="scriptCDN"><span class="htmlCode">&lt;script src=&quot;</span>https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js<span class="htmlCode">&quot;&gt;&lt;/script&gt;</span></li>
 			<li class="scriptDownload">Download : <a href="js/jquery.slim.min.js">jquery.slim.min.js</a></li>
 		</ul>
     </li>
     <script src="js/jquery.slim.min.js"></script>
     
     <li>
-        <a href="https://github.com/axios/axios">Axios 0.19.2</a>
+        <a  class="scriptName" href="https://github.com/axios/axios">Axios 0.19.2</a>
         <ul>
             <li class="scriptDescription">Promise based HTTP client for the browser and node.js</li>
-            <li class="scriptCDN">https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js</li>
+            <li class="scriptCDN"><span class="htmlCode">&lt;script src=&quot;</span>https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js<span class="htmlCode">&quot;&gt;&lt;/script&gt;</span></li>
             <li class="scriptDownload">Download : <a href="js/axios.min.js">axios.min.js</a></li>
         </ul>
     </li>
     <script src="js/axios.min.js"></script>
     
     <li>
-        <a href="https://d3js.org/">D3 5.15.0</a>
+        <a  class="scriptName" href="https://d3js.org/">D3 5.15.0</a>
         <ul>
             <li class="scriptDescription">Powerful visualization components and a data-driven approach to DOM manipulation.</li>
-            <li class="scriptCDN">https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js</li>
+            <li class="scriptCDN"><span class="htmlCode">&lt;script src=&quot;</span>https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js<span class="htmlCode">&quot;&gt;&lt;/script&gt;</span>
+</li>
             <li class="scriptDownload">Download : <a href="js/d3.min.js">d3.min.js</a></li>
         </ul>
     </li>   
     <script src="js/d3.min.js"></script>
     
     <li>
-        <a href="http://square.github.com/crossfilter/">Crossfilter 1.5.2</a>
+        <a  class="scriptName" href="http://square.github.com/crossfilter/">Crossfilter 1.5.2</a>
         <ul>
             <li class="scriptDescription">Fast n-dimensional filtering and grouping of records. </li>
-            <li class="scriptCDN">https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js</li>
+            <li class="scriptCDN"><span class="htmlCode">&lt;script src=&quot;</span>https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js<span class="htmlCode">&quot;&gt;&lt;/script&gt;</span>
+</li>
             <li class="scriptDownload">Download : <a href="js/crossfilter.min.js">crossfilter.min.js</a></li>
         </ul>
     </li>
     <script src="js/crossfilter.min.js"></script>
     
     <li>
-        <a href="https://github.com/Keyang/node-csvtojson/">CSVtoJSON 2.0.10</a>
+        <a  class="scriptName" href="https://github.com/Keyang/node-csvtojson/">CSVtoJSON 2.0.10</a>
         <ul>
             <li class="scriptDescription">A tool concentrating on converting csv data to JSON with customised parser supporting</li>
-            <li class="scriptCDN">https://cdn.jsdelivr.net/npm/csvtojson@2.0.10/browser/browser.min.js</li>
+            <li class="scriptCDN"><span class="htmlCode">&lt;script src=&quot;</span>https://cdn.jsdelivr.net/npm/csvtojson@2.0.10/browser/browser.min.js<span class="htmlCode">&quot;&gt;&lt;/script&gt;</span>
+</li>
             <li class="scriptDownload">Download : <a href="js/browser.min.js">browser.min.js</a></li>
         </ul>
     </li>  
     <script src="js/browser.min.js"></script>
     
     <li>
-        <a href="https://dc-js.github.io/dc.js/">DC.js 3.2.1</a>
+        <a  class="scriptName" href="https://dc-js.github.io/dc.js/">DC.js 3.2.1</a>
         <ul>
             <li class="scriptDescription">Dimensional Charting Javascript Library </li>
-            <li class="scriptCDN">https://cdnjs.cloudflare.com/ajax/libs/dc/3.2.1/dc.min.js</li>
-            <li class="scriptCDN">https://cdnjs.cloudflare.com/ajax/libs/dc/3.2.1/dc.min.css</li>
+            <li class="scriptCDN"><span class="htmlCode">&lt;link rel=&quot;stylesheet&quot; href=&quot;</span>https://cdnjs.cloudflare.com/ajax/libs/dc/3.2.1/dc.min.css<span class="htmlCode">&quot;&gt;</span></li>
+            <li class="scriptCDN"><span class="htmlCode">&lt;script src=&quot;</span>https://cdnjs.cloudflare.com/ajax/libs/dc/3.2.1/dc.min.js<span class="htmlCode">&quot;&gt;&lt;/script&gt;</span>
+</li>
             <li class="scriptDownload">Download : <a href="js/dc.min.js">dc.min.js</a>, <a href="css/dc.min.css">dc.min.css</a></li>
         </ul>
     </li>  
     <script src="js/dc.min.js"></script>
     
     <li>
-        <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Bootstrap 4.4.1</a>
+        <a  class="scriptName" href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Bootstrap 4.4.1</a>
         <ul>
             <li class="scriptDescription">Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.</li>
-            <li class="scriptCDN">https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css</li>
-            <li class="scriptCDN">https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js</li>
-            <li class="scriptCDN">https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js</li>
-            <li class="scriptCDN">https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js</li>
+            <li class="scriptCDN"><span class="htmlCode">&lt;link rel=&quot;stylesheet&quot; href=&quot;</span>https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css<span class="htmlCode">&quot;&gt;</span></li>
+            <li class="scriptCDN"><span class="htmlCode">&lt;script src=&quot;</span>https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js<span class="htmlCode">&quot;&gt;&lt;/script&gt;</span></li>
+            <li class="scriptCDN"><span class="htmlCode">&lt;script src=&quot;</span>https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js<<span class="htmlCode">&quot;&gt;&lt;/script&gt;</span>/li>
+            <li class="scriptCDN"><span class="htmlCode">&lt;script src=&quot;</span>https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js<span class="htmlCode">&quot;&gt;&lt;/script&gt;</span></li>
             <li class="scriptDownload">Download : <a href="js/jquery.min.js">jquery.min.js</a>, <a href="js/popper.min.js">popper.min.js</a>, <a href="js/bootstrap.min.js">bootstrap.min.js</a></li>
         </ul>
     </li>  
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
-    
-
-
-
-
- 
 </ul>
+
+<script src="js/script.js"></script>
 </body>
 
 

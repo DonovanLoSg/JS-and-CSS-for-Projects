@@ -13,3 +13,7 @@ li:last-child {
     margin-bottom: 20px;
 }
 
+li {
+    list-style-type: none;
+}
+
